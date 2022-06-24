@@ -8,6 +8,10 @@ function Form(props) {
       {props.isRegistered === false && (
         <input type="password" placeholder="Confirm Password" />
       )}
+
+      {/* You can also use the teneray operator ("?")props.isRegistered === false ? (
+        <input type="password" placeholder="Confirm Password" />
+      ) : null */}
       <button type="submit">{props.isRegistered ? "Login" : "Register"}</button>
     </form>
   );
